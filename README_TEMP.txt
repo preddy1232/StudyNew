@@ -1,2 +1,3 @@
 Initial project setup
 React app initialized
+Flask backend setup
