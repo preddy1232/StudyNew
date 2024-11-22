@@ -4,3 +4,4 @@ Flask backend setup
 OpenCV integration
 Blink detection algorithm
 Timer component
+Session tracking
