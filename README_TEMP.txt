@@ -5,3 +5,4 @@ OpenCV integration
 Blink detection algorithm
 Timer component
 Session tracking
+Focus analytics
