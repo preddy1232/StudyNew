@@ -7,3 +7,4 @@ Timer component
 Session tracking
 Focus analytics
 Recharts integration
+Settings page
