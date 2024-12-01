@@ -8,3 +8,4 @@ Session tracking
 Focus analytics
 Recharts integration
 Settings page
+LocalStorage persistence
