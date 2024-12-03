@@ -9,3 +9,4 @@ Focus analytics
 Recharts integration
 Settings page
 LocalStorage persistence
+Task planner
