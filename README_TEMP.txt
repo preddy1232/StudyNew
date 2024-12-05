@@ -10,3 +10,4 @@ Recharts integration
 Settings page
 LocalStorage persistence
 Task planner
+Achievement system
