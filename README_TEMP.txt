@@ -11,3 +11,4 @@ Settings page
 LocalStorage persistence
 Task planner
 Achievement system
+Confetti animations
