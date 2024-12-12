@@ -13,3 +13,4 @@ Task planner
 Achievement system
 Confetti animations
 Bug fixes
+MJPEG streaming
