@@ -14,3 +14,4 @@ Achievement system
 Confetti animations
 Bug fixes
 MJPEG streaming
+Base64 streaming
