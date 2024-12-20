@@ -16,3 +16,4 @@ Bug fixes
 MJPEG streaming
 Base64 streaming
 Performance optimization
+CORS configuration
