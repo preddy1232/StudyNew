@@ -17,3 +17,4 @@ MJPEG streaming
 Base64 streaming
 Performance optimization
 CORS configuration
+Context API
