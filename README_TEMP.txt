@@ -18,3 +18,4 @@ Base64 streaming
 Performance optimization
 CORS configuration
 Context API
+Session context
