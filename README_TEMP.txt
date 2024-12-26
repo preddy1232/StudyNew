@@ -19,3 +19,4 @@ Performance optimization
 CORS configuration
 Context API
 Session context
+Settings context
