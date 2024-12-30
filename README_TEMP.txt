@@ -21,3 +21,4 @@ Context API
 Session context
 Settings context
 Custom hooks
+useTimer hook
