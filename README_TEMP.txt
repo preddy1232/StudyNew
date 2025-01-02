@@ -22,3 +22,4 @@ Session context
 Settings context
 Custom hooks
 useTimer hook
+useFocusStats hook
