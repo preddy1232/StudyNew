@@ -23,3 +23,4 @@ Settings context
 Custom hooks
 useTimer hook
 useFocusStats hook
+Focus score formula
