@@ -27,3 +27,4 @@ Focus score formula
 Distraction tracking
 Real-time analytics
 Live session indicator
+UI improvements
