@@ -28,3 +28,4 @@ Distraction tracking
 Real-time analytics
 Live session indicator
 UI improvements
+Responsive design
