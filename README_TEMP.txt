@@ -30,3 +30,4 @@ Live session indicator
 UI improvements
 Responsive design
 Keyboard shortcuts
+Notifications
