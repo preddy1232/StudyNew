@@ -31,3 +31,4 @@ UI improvements
 Responsive design
 Keyboard shortcuts
 Notifications
+Sound alerts
