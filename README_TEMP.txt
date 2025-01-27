@@ -32,3 +32,4 @@ Responsive design
 Keyboard shortcuts
 Notifications
 Sound alerts
+Desktop notifications
