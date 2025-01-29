@@ -33,3 +33,4 @@ Keyboard shortcuts
 Notifications
 Sound alerts
 Desktop notifications
+Privacy features
