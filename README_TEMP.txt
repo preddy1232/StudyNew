@@ -37,3 +37,4 @@ Privacy features
 Data export
 Onboarding flow
 Bug fixes v2
+Code refactoring
