@@ -40,3 +40,4 @@ Bug fixes v2
 Code refactoring
 Documentation
 Testing improvements
+Performance tuning
