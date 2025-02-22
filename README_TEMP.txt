@@ -41,3 +41,4 @@ Code refactoring
 Documentation
 Testing improvements
 Performance tuning
+Deep work mode
