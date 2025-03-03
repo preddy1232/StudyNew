@@ -44,3 +44,4 @@ Performance tuning
 Deep work mode
 Custom timer
 Auto-progression
+Theme support
