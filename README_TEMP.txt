@@ -46,3 +46,4 @@ Custom timer
 Auto-progression
 Theme support
 Accessibility
+Final polish
