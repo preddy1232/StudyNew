@@ -47,3 +47,4 @@ Auto-progression
 Theme support
 Accessibility
 Final polish
+Version 2.0
