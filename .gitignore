@@ -48,7 +48,6 @@ backend/main_debug.py
 backend/main_enhanced.py
 backend/main_clean.py
 backend/test_*.py
-backend/blink.py
 backend/Handtracker.py
 backend/models/
 
