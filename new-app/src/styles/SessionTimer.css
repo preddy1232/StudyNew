@@ -1,0 +1,392 @@
+/* SessionTimer Styles */
+
+.session-timer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  padding: 24px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.timer-container {
+  background: white;
+  border-radius: 16px;
+  padding: 40px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Preset Selector */
+.preset-selector {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 40px;
+  width: 100%;
+  max-width: 600px;
+}
+
+.preset-btn {
+  flex: 1;
+  padding: 16px;
+  background: #F8F9FA;
+  border: 2px solid #E8ECF0;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #5A6C7D;
+}
+
+.preset-btn:hover {
+  border-color: #3498DB;
+  background: #F7FBFF;
+}
+
+.preset-btn.active {
+  background: #3498DB;
+  border-color: #3498DB;
+  color: white;
+}
+
+.preset-time {
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+/* Timer Display */
+.timer-display {
+  position: relative;
+  width: 320px;
+  height: 320px;
+  margin-bottom: 40px;
+}
+
+.progress-ring {
+  transform: scaleY(-1);
+}
+
+.progress-ring-fill {
+  transition: stroke-dashoffset 1s linear, stroke 0.3s ease;
+}
+
+.progress-ring-fill.break-mode {
+  stroke: #F39C12;
+}
+
+.timer-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+}
+
+.timer-mode {
+  font-size: 16px;
+  color: #7F8C9B;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.timer-time {
+  font-size: 72px;
+  font-weight: 700;
+  color: #2C3E50;
+  line-height: 1;
+  margin-bottom: 8px;
+  font-family: 'Courier New', monospace;
+}
+
+.timer-status {
+  font-size: 14px;
+  color: #95A5A6;
+  font-weight: 500;
+}
+
+/* Timer Controls */
+.timer-controls {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.control-btn {
+  padding: 14px 28px;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.control-btn.primary {
+  background: #3498DB;
+  color: white;
+}
+
+.control-btn.primary:hover {
+  background: #2980B9;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(52, 152, 219, 0.4);
+}
+
+.control-btn.primary.pause {
+  background: #F39C12;
+}
+
+.control-btn.primary.pause:hover {
+  background: #E67E22;
+  box-shadow: 0 6px 20px rgba(243, 156, 18, 0.4);
+}
+
+.control-btn.secondary {
+  background: #E8ECF0;
+  color: #5A6C7D;
+}
+
+.control-btn.secondary:hover {
+  background: #D4DAE1;
+}
+
+/* Keyboard Shortcuts */
+.keyboard-shortcuts {
+  display: flex;
+  gap: 16px;
+  font-size: 13px;
+  color: #7F8C9B;
+  padding: 16px;
+  background: #F8F9FA;
+  border-radius: 8px;
+  margin-bottom: 32px;
+}
+
+.keyboard-shortcuts kbd {
+  background: #2C3E50;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-family: 'Courier New', monospace;
+  font-weight: 700;
+  font-size: 11px;
+}
+
+/* Session Stats */
+.session-stats {
+  width: 100%;
+  padding: 24px;
+  background: #F8F9FA;
+  border-radius: 12px;
+  border-left: 4px solid #3498DB;
+}
+
+.session-stats h3 {
+  margin: 0 0 16px 0;
+  font-size: 16px;
+  color: #2C3E50;
+  font-weight: 600;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.stat-label {
+  font-size: 12px;
+  color: #7F8C9B;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.stat-value {
+  font-size: 24px;
+  font-weight: 700;
+  color: #2C3E50;
+}
+
+.stat-value.focused {
+  color: #27AE60;
+}
+
+.stat-value.distracted {
+  color: #E74C3C;
+}
+
+/* Camera Section */
+.camera-section {
+  background: white;
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.camera-section h3 {
+  margin: 0 0 20px 0;
+  font-size: 20px;
+  color: #2C3E50;
+  font-weight: 600;
+}
+
+.camera-feed {
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+}
+
+.camera-feed img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+/* Detection Status */
+.detection-status {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.status-indicator {
+  flex: 1;
+  padding: 16px;
+  background: #F8F9FA;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.status-indicator.active {
+  background: #E8F8F5;
+  border-left: 4px solid #27AE60;
+}
+
+.status-indicator.inactive {
+  background: #FFEBEE;
+  border-left: 4px solid #E74C3C;
+}
+
+.status-icon {
+  font-size: 24px;
+  line-height: 1;
+}
+
+.status-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #2C3E50;
+}
+
+/* Camera Tips */
+.camera-tips {
+  padding: 16px;
+  background: #E3F2FD;
+  border-radius: 8px;
+  border-left: 4px solid #3498DB;
+}
+
+.camera-tips p {
+  margin: 0;
+  font-size: 14px;
+  color: #1976D2;
+  line-height: 1.6;
+}
+
+/* No Camera Message */
+.no-camera-message {
+  grid-column: span 2;
+  text-align: center;
+  padding: 60px 20px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  color: #7F8C9B;
+}
+
+.no-camera-message p {
+  margin: 8px 0;
+  font-size: 16px;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .session-timer {
+    grid-template-columns: 1fr;
+  }
+
+  .no-camera-message {
+    grid-column: span 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .session-timer {
+    padding: 16px;
+  }
+
+  .timer-container,
+  .camera-section {
+    padding: 24px;
+  }
+
+  .preset-selector {
+    flex-direction: column;
+  }
+
+  .timer-display {
+    width: 280px;
+    height: 280px;
+  }
+
+  .timer-time {
+    font-size: 56px;
+  }
+
+  .timer-controls {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .control-btn {
+    flex: 1;
+    min-width: 120px;
+  }
+
+  .keyboard-shortcuts {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .detection-status {
+    flex-direction: column;
+  }
+}
