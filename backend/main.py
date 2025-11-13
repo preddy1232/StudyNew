@@ -1,6 +1,7 @@
 from flask import Flask, Response, jsonify
 import cv2
 from flask_cors import CORS
+import base64
 
 app = Flask(__name__)
 CORS(app, resources={r"/*": {"origins": "*"}})
@@ -87,6 +88,29 @@ def video_feed():
 def get_detection_state():
     """API endpoint to return the current detection state."""
     return jsonify(detection_state)
+
+
+@app.route('/frame', methods=['GET'])
+def get_frame():
+    """API endpoint to return a single frame as base64 encoded image."""
+    success, frame = camera.read()
+    if not success:
+        return jsonify({"error": "Failed to capture frame"}), 500
+
+    # Analyze the frame for detections
+    analyze_frame(frame)
+
+    # Encode frame to JPEG
+    ret, buffer = cv2.imencode('.jpg', frame)
+    if not ret:
+        return jsonify({"error": "Failed to encode frame"}), 500
+
+    # Convert to base64
+    frame_base64 = base64.b64encode(buffer).decode('utf-8')
+
+    return jsonify({
+        "frame": f"data:image/jpeg;base64,{frame_base64}"
+    })
 
 
 if __name__ == '__main__':

@@ -3,18 +3,28 @@
  * Main study session interface with timer, camera feed, and controls
  */
 import React, { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { useSession } from '../context/SessionContext';
 import { useSettings } from '../context/SettingsContext';
 import '../styles/SessionTimer.css';
 
 export default function SessionTimer() {
-  const { timer, focusStats, startWorkSession, pauseSession, resetSession } = useSession();
+  const navigate = useNavigate();
+  const { timer, focusStats, startWorkSession, pauseSession, resetSession, completeSession } = useSession();
   const { settings } = useSettings();
   const [detectionState, setDetectionState] = useState({
     face_detected: false,
     blink_count: 0
   });
   const [cameraFrame, setCameraFrame] = useState(null);
+
+  // Handler for ending session early
+  const handleEndSessionEarly = () => {
+    if (focusStats.isTracking) {
+      completeSession();
+      navigate('/analytics');
+    }
+  };
 
   // Fetch camera frames continuously (base64 method)
   useEffect(() => {
@@ -208,6 +218,11 @@ export default function SessionTimer() {
           <button onClick={timer.skip} className="control-btn secondary">
             ⏭️ Skip
           </button>
+          {focusStats.isTracking && (
+            <button onClick={handleEndSessionEarly} className="control-btn success">
+              ✅ End & View Results
+            </button>
+          )}
         </div>
 
         {/* Keyboard Shortcuts Help */}
